@@ -21,15 +21,22 @@ p {
 	text-align: center;
 	font-weight: bold;
 }
+#reload{
+margin:auto;
+text-align:center;
+}
 </style>
 </head>
 <!-- <body style="background-color:powderblue;"> -->
 
 <h1 align="center">Welcome to Blobspire!</h1>
-<h2 align="center">Relax, Inspire, Learn</h2>
+<h2 align="center">Relax, Explore, Learn</h2>
 
 <input type="image" src="greenArrowClipart.png" onclick="blobNumber()" width="200" height="200" align="left"/>
-<input type="image" src="redXClipart.png" onclick="history.go(0)" align="right" width="200" height="200" />
+<input type="image" src="hollowRedSpeedBubbleArt.png" onclick="submitBlob()" align="right" width="200" height="200" />
+<form id="reload">
+<input type="image" src="blueReloadArt.jpg" onclick="history.go(0)" align="middle" width="200" height="200" />
+</form>
 
 <script>
 function blobNumber() {
@@ -46,11 +53,17 @@ function blobNumber() {
 document.getElementById("topText").innerHTML = top;
 
 }
+
+function submitBlob() {
+    var text =prompt("Thank you for helping to build our collection! Please enter a submission.","Think of a brief account of something that you would like to teach. Ex) facts, history, exercises, life hacks, skills, etc!");
+    
+}
+
 </script>
 
 <br>
 <br>
-<p id="topText"></p>
+<p id="topText">Press the green arrow to begin!</p>
 
 </body>
 </html>
