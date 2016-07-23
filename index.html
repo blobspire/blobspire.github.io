@@ -25,19 +25,71 @@ p {
 margin:auto;
 text-align:center;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 2.5em;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+#myDIV {
+    color: black;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {color: black;} <!-- one that changes (same with below) -->
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {color: black;}
+}
+
 </style>
 </head>
-<!-- <body style="background-color:powderblue;"> -->
-
 <body>
 
-	<nav>
-    		<ul>
-        		<li><a href="/">Blobspire</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/features">Features</a></li>
-    		</ul>
-	</nav>
+<ul>
+  <li style="float:left;width:33%;"><a id="myDIV" href="#blobspire">Blobspire</a></li>
+  <li style="width:33%"><a id="myDIV" href="#features">Features</a></li>
+  <li style="float:right;width:33%;"><a id="myDIV" href="#about">About</a></li>
+</ul>
+
+<!-- <body style="background-color:powderblue;"> -->
+
+<br>
+
+
+
+<br>
 
 <form id="reload">
 <input type="image" src="blueSquareContracting.gif" onclick="" align="middle" width="800" height="10" />
