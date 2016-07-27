@@ -4,13 +4,10 @@
 
 <!-- generate random number on button press - change background color to random color - change with every button press -->
 
-<input type="image" src="greenArrowClipart.png" onclick="colorTime()" width="200" height="200" align="right"/>
-
 <script>
 function colorTime() {
 
-	var number = Math.floor((Math.random() * 4) + 1); 
-	var keepNumber = number;
+	var number = Math.floor((Math.random() * 4) + 1);
 
 	switch (number) {
     case 1:
@@ -32,10 +29,11 @@ document.getElementById("blank").innerHTML = null;
 
 }
 
+window.onload = colorTime;
+
 </script>
 
-<h1 id="blank" >Press the green arrow to begin!</h1>
-
+<meta http-equiv="refresh" content="4" />
 
 </body>
 </html>
