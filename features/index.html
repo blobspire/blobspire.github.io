@@ -5,26 +5,6 @@
 </title>
 <style>
 
-a:link {
-    color: gray;
-    text-decoration: none;
-}
-
-a:visited {
-    color: gray;
-    text-decoration: none;
-}
-
-a:hover {
-    color: gray;
-    text-decoration: underline;
-}
-
-a:active {
-    color: gray;
-    text-decoration: underline;
-}
-
 body {
     font-size: 100%;
 }
@@ -52,10 +32,14 @@ text-align:center;
 	font-size: 2.8em;
 	margin:auto;
 	text-align:center;
-	font-weight: bold;
 	color: black;
+	text-decoration: none;
+
 }
 
+a#featureOption:hover {
+	text-decoration: underline;
+}
 
 ul {
     list-style-type: none;
@@ -71,7 +55,7 @@ li {
 }
 
 li a {
-    font-size: 2.5em;
+    font-size: 3em;
     display: block;
     color: #666;
     text-align: center;
@@ -86,6 +70,22 @@ li a:hover:not(.active) {
 li a.active {
     color: green;
     background-color: #4CAF50;
+}
+
+#colorType {
+    color: black;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {color: black;} <!-- one that changes (same with below) -->
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {color: black;}
 }
 
 </style>
