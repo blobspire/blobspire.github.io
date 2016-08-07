@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Blobspire - Let's change the world 
+</title>
+<style>
+
+body {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 2em;
+    text-align:center;
+	}
+
+#reload {
+margin:auto;
+text-align:center;
+}
+
+#featureOption {
+	font-size: 2.8em;
+	margin:auto;
+	text-align:center;
+	color: black;
+	text-decoration: none;
+
+}
+
+a#featureOption:hover {
+	text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 5px solid white;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 3em;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: green;
+    background-color: #4CAF50;
+}
+
+#colorType {
+    color: black;
+}
+
+#bar {
+    margin:auto;
+    text-align:center;
+    width: 33vw;
+    height: 10px;
+    background-color: blue;
+    position: relative;
+    -webkit-animation-name: bar; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+    animation-name: bar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bar {
+    0%   {background-color: red; width: 43vw;}
+    50%  {background-color: red; width: 67vw;}
+    100% {background-color: red; width: 43vw;}
+}
+
+/* Standard syntax */
+@keyframes bar {
+    0%   {background-color: red; width: 43vw;}
+    50%  {background-color: red; width: 67vw;}
+    100% {background-color: red; width: 43vw;}
+
+}
+
+#blueBar {
+    margin:auto;
+    text-align:center;
+    width: 50vw;
+    height: 10px;
+    background-color: blue;
+    position: relative;
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li style="float:left;width:33%;"><a id="colorType" href="https://blobspire.github.io">Blobspire</a></li>
+  <li style="width:33%"><a id="colorType" href="https://blobspire.github.io/ourmission">Our Mission</a></li>
+  <li style="float:right;width:33%;"><a id="colorType" href="https://blobspire.github.io/features">Features</a></li>
+</ul>
+
+<br>
+<br>
+
+<div id="bar"></div>
+
+<h1 align="center"> Welcome to Our Mission! </h1>
+<h2 align="center"> Relax, Explore, Learn </h2>
+
+<div id="bar"></div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- <div id="blueBar"></div> -->
+
+<h2 align="center"> Relax </h2>
+<p> Enjoy the calming atmosphere to allow to divert attention from stress to something interesting</p>
+<br>
+<h2 align="center"> Explore </h2>
+<p> Venture outside of traditional interests with sources from all areas of life </p>
+<br>
+<h2 align="center"> Learn </h2>
+<p> Journey through different facts, quotes, life hacks, and other types of material</p>
+<br>
+
+
+
+
+</body>
+</html>
