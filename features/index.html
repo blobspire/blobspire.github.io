@@ -46,8 +46,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
+    border: 5px solid white;
+    background-color: white;
 }
 
 li {
@@ -74,23 +74,40 @@ li a.active {
 
 #colorType {
     color: black;
-    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
+}
+
+#bar {
+    margin:auto;
+    text-align:center;
+    width: 33vw;
+    height: 10px;
+    background-color: blue;
+    position: relative;
+    -webkit-animation-name: bar; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+    animation-name: bar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {color: black;} <!-- one that changes (same with below) -->
+@-webkit-keyframes bar {
+    0%   {background-color: lawngreen; width: 43vw;}
+    50%  {background-color: lawngreen; width: 67vw;}
+    100% {background-color: lawngreen; width: 43vw;}
 }
 
 /* Standard syntax */
-@keyframes mymove {
-    50% {color: black;}
+@keyframes bar {
+    0%   {background-color: lawngreen; width: 43vw;}
+    50%  {background-color: lawngreen; width: 67vw;}
+    100% {background-color: lawngreen; width: 43vw;}
+
 }
 
 </style>
 </head>
-<body>
+<body style="background-color: white;">
 
 <ul>
   <li style="float:left;width:33%;"><a id="colorType" href="https://blobspire.github.io">Blobspire</a></li>
@@ -101,18 +118,26 @@ li a.active {
 <br>
 <br>
 
-<form id="reload">
-<input type="image" src="redSquareArt.png" onclick="" align="middle" width="800" height="10" />
-</form>
+<div id="bar"></div>
 
-<h1 align="center">Features</h1>
-<h2 align="center">Something creative here</h2>
 
-<form id="reload">
-<input type="image" src="redSquareArt.png" onclick="" align="middle" width="800" height="10" />
-</form>
+<h1 align="center">Welcome to the Features</h1>
+<h2 align="center">Stuff on the Rise!</h2>
+
+<div id="bar"></div>
+
 
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<form id="reload">
+<input type="image" src="redSquareArt.png" onclick="" align="middle" width="800" height="10" />
+</form>
+
 <br>
 <br>
 <br>
@@ -122,8 +147,18 @@ li a.active {
 
 <div style="text-align:center">    
 <a id="featureOption" href="https://blobspire.github.io/features/peripheralvisiondrill" target="_blank">Improve Peripheral Vision Drill</a>
+<br>
+<br>
 
 </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 </body>
 </html>
