@@ -15,9 +15,12 @@ h1 {
 h2 {
     font-size: 3.5em;
 }
+h3 {
+    font-size:3em;
+}
 
 p {
-    font-size: 2.8em;
+    font-size: 2.1em;
 	text-align: center;
 	font-weight: bold;
 }
@@ -116,17 +119,20 @@ function blobNumber() {
 
 	switch (number) {
     case 1:
-        var top = "Roman soldiers were often paid in salt! In fact, the English word 'soldier' comes from the Latin word 'sal' for salt.";
+        var top = "Roman soldiers were often paid in salt as it was so valuable! In fact, the English word 'soldier' comes from the Latin word 'sal' for salt.";
         break;
     case 2:
-        var top = "When holding your breath, your body first complains about the buildup of Carbon Dioxide in your system, not the absence of Oxygen. To hold your breath longer, slowly exhale.";
+        var top = "When holding your breath, it is not the lack of oxygen that forces you to breath; rather it is the buildup of Carbon Dioxide. To hold your breath longer, \"Purge\" the Carbon Dioxide by taking several deep breaths rapidly.";
         break;
     case 3:
-        var top = "There are more possible different games of chess than atoms in the Universe!";
+        var top = "Chess is a complex game; There are more possible different games than atoms present in the whole universe.";
         break;
     }
 document.getElementById("topText").innerHTML = top;
-
+var empty = " ";
+document.getElementById("emptyText").innerHTML = empty;
+	
+	
 }
 
 function submitBlob() {
@@ -138,7 +144,8 @@ function submitBlob() {
 
 <br>
 
-<p id="topText">Press the green arrow to begin!</p>
+<h3 id="emptyText" align="center">Press the green arrow to begin!</h3>
+<p id="topText" ></p>
 
 </body>
 </html>
