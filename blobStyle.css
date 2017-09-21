@@ -1,0 +1,96 @@
+body {
+    font-size: 100%;
+    font-family:"Courier New";
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+h3 {
+    font-size:2.5em;
+}
+h4 {
+    font-size:2em;
+}
+
+p {
+        font-size: 1.80em;
+	text-align: center;
+	line-height: 160%;
+	padding-left: 10%;
+	padding-right: 10%;
+
+
+}
+#reload{
+margin:auto;
+text-align:center;
+}
+#stayRight {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 150;
+    height: 100;
+}
+#stayLeft {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    width: 150;
+    height: 100;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+li {
+    float: left;
+}
+
+li a {
+
+    font-family:"Courier New";
+    font-size: 3em;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: green;
+    background-color: #4CAF50;
+}
+
+#colorType {
+    color: black;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {color: black;} <!-- one that changes (same with below) -->
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {color: black;}
+}
+
